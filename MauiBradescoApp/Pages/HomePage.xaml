@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBradescoApp.Pages.HomePage"
+             NavigationPage.HasBackButton="false"
+             >
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                <GradientStop Color="#ff2565" Offset="0" />
+                <GradientStop Color="#ff0063" Offset="1.1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackLayout VerticalOptions="StartAndExpand" Orientation="Horizontal" Margin="20,15">
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png"
+               WidthRequest="35"
+               HorizontalOptions="StartAndExpand"/>
+            
+            <Label Text="bradesco" 
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalTextAlignment="Center" FontFamily=""/>
+
+            <ImageButton Source="https://static-00.iconduck.com/assets.00/logout-icon-2048x2046-yqonjwjv.png"
+               WidthRequest="27"
+               HorizontalOptions="EndAndExpand"
+               Clicked="onLogoutClicked"
+              />
+        </StackLayout >
+        <StackLayout Margin="20,90" >
+
+            <Label Text="Olá, Pedro" 
+                   FontAttributes="Bold"
+                   TextColor="White" />
+            
+            <Image Source="https://github.com/pedrh77/xamarin-forms/assets/66256107/521bd09b-d868-4fcd-af64-18bcae71c768"
+               WidthRequest="25"
+               HorizontalOptions="StartAndExpand"/>
+                    </StackLayout>
+        <StackLayout>
+            <Line X1="0"
+                  Y1="0"
+                  X2="360"
+                  Y2="0"
+                  Stroke="White" />
+        </StackLayout>
+
+
+        <!--
+        <StackLayout Margin="20,90">
+
+            <Label Text="Olá, Pedro" 
+                   FontAttributes="Bold"
+                   TextColor="White" />
+            
+            <Image Source="https://github.com/pedrh77/xamarin-forms/assets/66256107/521bd09b-d868-4fcd-af64-18bcae71c768"
+               WidthRequest="25"
+               HorizontalOptions="StartAndExpand"/>
+            
+            <Line X1="0"
+                  Y1="0"
+                  X2="360"
+                  Y2="0"
+                  Stroke="White" />
+
+
+
+        </StackLayout>
+
+        -->
+
+    </Grid>
+</ContentPage>

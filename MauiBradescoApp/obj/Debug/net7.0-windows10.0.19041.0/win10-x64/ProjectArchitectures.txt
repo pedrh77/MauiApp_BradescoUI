@@ -1,0 +1,1 @@
+C:\PessoalProj\MauiBradescoApp\MauiBradescoApp\MauiBradescoApp.csproj;x64

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBradescoApp.MainPage"
+              Shell.NavBarIsVisible="False">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#ff2565" Offset="0" />
+                <GradientStop Color="#ff0063" Offset="1.1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackLayout VerticalOptions="Start" Orientation="Horizontal" Margin="20,15">
+            <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png"
+               WidthRequest="40"
+               HorizontalOptions="Start"/>
+
+            <Image Source="https://github.com/pedrh77/xamarin-forms/assets/66256107/4409b73e-80f7-4036-8fbc-9b20f2125377"
+               WidthRequest="35"
+               HorizontalOptions="EndAndExpand"
+              />
+        </StackLayout>
+        <StackLayout Margin="10,50">
+        <Image Source="https://portal.negociebra.com.br/img/bradesco_white.png" 
+               Aspect="Fill" 
+               HorizontalOptions="Start"
+               Margin="0,40,0,90"
+               WidthRequest="250" 
+               />
+
+        <Label Text="Pedro Santos"
+               FontSize="Title"
+               TextColor="White"
+               FontAttributes="Bold" 
+               Margin="15,20"/>
+
+        <Label Text="Agência: **70      Conta ******17-2"
+               FontSize="Subtitle"
+               TextColor="White" 
+               FontAttributes="Bold" 
+               Margin="20,0,0,100"/>
+
+            <Button Background="White"
+                Text="Entrar"
+                TextColor="#ff0063"
+                Margin="20,10"
+                Padding="17"
+                FontSize="Default"
+                CornerRadius="25"
+               FontAttributes="Bold" Clicked="onClickRedirectInicio"/>
+        
+        <Label Text="Acessar outra conta"
+               TextColor="White"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               FontSize="Default"
+               TextDecorations="Underline"
+               />
+
+</StackLayout>
+    </Grid>
+</ContentPage>
